@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sample</title>
+</head>
+<body>
+<style>
+    body {
+        background: url('main-bg.jpg') repeat;
+        height: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        padding: 25px;
+    }
+
+    .wrapper {
+        max-width: 940px;
+        margin: 0 auto;
+    }
+
+    .header {
+        padding: 0 10px 30px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+    }
+
+    .header a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .header .logo {
+        font-weight: bold;
+        margin: 0 30px 0 0;
+    }
+
+    .header a:hover {
+        text-decoration: underline;
+    }
+
+    .main {
+        width: 837px;
+        margin: 0 auto;
+    }
+
+    .main-nav a {
+        margin: 0 15px 0 0;
+    }
+
+    .login-form {
+        border: 1px solid  #fff;
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, .5);
+        padding: 20px;
+        background: rgba(0, 0, 255, .3);
+        min-height: 250px;
+    }
+
+    .login-form fieldset {
+        margin: 0;
+        border: 0;
+    }
+
+    .login-form input {
+        display: block;
+        padding: 5px;
+        height: 30px;
+        line-height: 30px;
+        text-transform: uppercase;
+        font-size: 20px;
+        border-radius: 5px;
+        margin: 0 0 15px;
+        border: 1px solid #fff;
+        font-style: italic;
+    }
+
+    .login-form input[type=submit] {
+        padding: 0;
+        margin: 0;
+        background: #0ff;
+        color: #fff;
+        text-transform: uppercase;
+        width: 70px;
+        text-align: center;
+        height: 35px;
+        outline: none;
+    }
+
+    .login-form input[type=submit]:active {
+        box-shadow: 0 0 3px 1px rgba(255, 255, 255, .5);
+    }
+</style>
+
+<div class="wrapper">
+    <header class="header">
+        <strong class="logo"><a href="">\/</a></strong>
+
+        <nav class="main-nav">
+            <a href="/home">Home</a>
+            <a href="/tasks">Task List</a>
+            <a href="/home">Contacts</a>
+        </nav>
+
+        <div class="user-box">
+            <a href="/createuser">Create User</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <form action="#" class="login-form">
+            <fieldset>
+                <input type="text" placeholder="Login">
+                <input type="password" placeholder="Password">
+                <input type="submit" value="SAVE">
+            </fieldset>
+        </form>
+    </main>
+
+</div>
+</body>
+</html>
